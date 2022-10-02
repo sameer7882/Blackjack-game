@@ -8,28 +8,26 @@ function CreateArea() {
     content : ""
 });
 
+  // to add component in the keeper app
+  
     function handleChange(event){
 
         const targ = event.target.name;
         const newValue = event.target.value;
         
         if(targ == "title"){
-
             setNote( prevValue  =>({title : newValue,content : prevValue.content
-
             }))
         }
 
         else{
-
           setNote( (prevValue)  =>   ({title : prevValue.title, content: newValue}))
         }
-
     }
 
     function addNewTask(){
 
-
+        // function to add new tasks 
     }
 
   return (
